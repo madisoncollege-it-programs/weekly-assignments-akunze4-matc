@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-#Author: Alex Kunze for Door 3
+#Modified by: Alex Kunze
 #Purpose messing with IF statements
 
-print("""You enter a dark room with two doors. 
+print("""You enter a dark room with 3 doors. 
 Do you go through door #1, door #2, or door #3?""")
 
 
@@ -12,40 +12,43 @@ door = input("-> ")
 # == Door Number 1 logic =======================
 if door == "1":
 
-    print("There's a giant bear here eating a cheese cake.")
+    print("As you enter through the door you see quite a strange thing. There's a skeleton playing the banjo.")
     print("What do you do?\n")
 
-    print("1. Take the cake.")
-    print("2. Scream at the bear.")
+    print("1. Take the banjo.")
+    print("2. Scream at the skeleton.")
+    print("3. Ask the lonely dude for help.")
 
-    # == Bear logic ============================
-    bear = input("-> ")
+    # == Skeleton logic ============================
+    bruh = input("-> ")
 
-    if bear == "1":
-        print("1) The bear eats your face off. Good job!")
-    elif bear == "2":
-        print("2) The bear eats your legs off. Good job!")
+    if bruh == "1":
+        print("The skeleton then grabs your throat, resulting in your death. Good job!")
+    elif bruh == "2":
+        print("The skeleton looks you straight in the eyes, resulting in your petrification into stone.!")
     else:
-        print(f"N)Well, doing {bear} is probably better.")
-        print("Bear runs away.")
+        print(f"You ask the skeleton playing the Banjo if he can give you a hand in finding your way out of this endless maze")
+        print("The banjo player then rips off his own hand, and gives it to the traveler. The skeleton then vanishes into thin air")
 
 # == Door Number 2 Logic =====================
 elif door == "2":
-    print("You stare into the endless abyss at Cthulhu's retina.\n")
+    print("As you enter the through the door, you come across a strange fellow")
+
     
-    print("1. Blueberries.")
-    print("2. Yellow jacket clothespins.")
-    print("3. Understanding revolvers yelling melodies.")
+    print("1. Ask the fellow for help in escaping the endless maze.")
+    print("2. Completely ignore the fellow, and keep walking.")
+    print("3. Do absolutely nothing.")
     
     # == Insanity Logic ======================
     insanity = input("-> ")
 
     if insanity == "1" or insanity == "2":
-        print("1) Your body survives powered by a mind of jello.")
-        print("1) Good job!")
+        print(" The kind fellow gives you a map of the maze, pointing out where you are currently located. He then vanishes into thin air.")
+        print(" Good job!")
     else:
-        print("N) The insanity rots your eyes into a pool of muck.")
-        print("N) Good job!")
+        print(" The kind fellow dashes straight towards you, and then rips you apart.")
+        print(" Good job!")
+# == Door Number 3 Logic =====================
 elif door == "3":
     print("You see Kermit the Frog standing in the back of the room. What do you do?")
 
@@ -55,6 +58,7 @@ elif door == "3":
     3. Start running for one of the doors.
     """)
 
+    # == Brain scratching Logic ==============
     what = input("> ")
     if what == "1":
         print("You instantly become petrified into stone.")
