@@ -14,28 +14,53 @@ command_database = {
 
 white_rabbit_object = 0
 counter = 0
-input_user = input("Username: > ")
-input_password = input("Password: > ")
 
-while white_rabbit_object == 0 and counter <= 3:
-    for thing in midDict.values():
-        if input_user == thing:
-            for thang in midDict.values():
-                if input_password == thang:
-                    print("Loogin Sucessful")
-                    white_rabbit_object = 1
-                    print(command_database.keys())
-                    input_command = input("Command > ")
-                    if input_command == "reboot":
-                        print(command_database["reboot"])
-                    if input_command == "shutdown":
-                        print(command_database["shutdown"])
-                    if input_command == "done":
-                        print(command_database["done"])
-                    else:
-                        print("The Lysine Contigency has been put into effect.")
+while counter <= 3 and white_rabbit_object == 0:
+    input_user = input("Username: > ")
+    input_password = input("Password: > ")
+    if input_password in midDict.values() and input_user in midDict.values():
+        print("Hi, Dennis. You're still the best hacker in Jurassic Park.")
+        white_rabbit_object = 1
+        print(command_database.keys())
+        input_command = input("Command: --> ")
+        if input_command == "reboot":
+            print(command_database["reboot"])
+        elif input_command == "shutdown":
+            print(command_database["shutdown"])
+        elif input_command == "done":
+            print(command_database["done"])
         else:
-            if white_rabbit_object != 1:
-                print("Loogin Failure")
-            white_rabbit_object = 1
-            counter + 1
+            print("The lysine Contigency has been put into effect.")
+    else:
+        print("Authentication Failure")
+        counter += 1
+        if counter == 3:
+            annoyance = "You didn't say the magic word"
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+            print(annoyance)
+        else:
+            print(f"You didn' say the magic word {counter}")
+
