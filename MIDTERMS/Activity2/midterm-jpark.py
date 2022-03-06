@@ -35,32 +35,7 @@ while counter <= 3 and white_rabbit_object == 0:
         print("Authentication Failure")
         counter += 1
         if counter == 3:
-            annoyance = "You didn't say the magic word"
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
-            print(annoyance)
+            print("You didn't say the magic word\n" * 25)
         else:
             print(f"You didn' say the magic word {counter}")
 
