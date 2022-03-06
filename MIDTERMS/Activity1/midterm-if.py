@@ -3,23 +3,28 @@
 print("Name: Alex Kunze")
 
 openFile = open("Midterm-if.txt", "r")
-lineNumber = 0
 Total = 0
 
 for line in openFile:
-    lineNumber += 1
+
     if "gmeach18@ed.gov" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
     elif "248.253.63.149" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
     elif "Whiteland" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
     elif "80.222.19.190" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
     elif "Kayley" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
     elif "dcassyqw@microsoft.com" in line:
-        Total += lineNumber - 1
+        Total += int(line.split(",")[0])
+
 
 print(f"The total is: {Total}")
 
