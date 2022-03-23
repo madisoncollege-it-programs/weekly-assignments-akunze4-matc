@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 #Author: Alex Kunze
-#Purpose: Converting Fahrenheit to Celsius
+#Purpose: Converting Fahrenheit to Kelvin
 
 
 def F2C(Fahrenheit):
 
     Kelvin = (5/9 * (Fahrenheit - 32) + 273.15)
     return Kelvin
-# K = 5/9(F - 32) + 273.15
 
 def main():
     global inputVar
