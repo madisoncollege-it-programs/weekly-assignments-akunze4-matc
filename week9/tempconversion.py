@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#Author: Alex Kunze
 #Purpose: Importing conversion functions
 
 import c2f
