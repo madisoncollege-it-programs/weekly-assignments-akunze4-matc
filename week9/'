@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+#Purpose: Importing conversion functions
+
+import c2f
+import f2c
+
+inputVarFormat = (input("(1)Fahrenheit or (2)Celsius?: "))
+
+if inputVarFormat == "2":
+    inputVar = float(input("Enter a number: "))
+    f2c.F2C(firstVar)
+elif inputVarFormat == "1":
+    inputVar = float(input("Enter a number: "))
+    c2f.C2F(firstVar)
