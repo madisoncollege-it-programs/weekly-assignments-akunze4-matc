@@ -9,10 +9,10 @@ def C2F(Celsius):
     return Fahrenheit
 
 
-# def main():
-#     global inputVar
-#     inputVar = float(input("Celsius? "))
-#     if __name__ == "__main__":
-#         print(f"Fahrenheit {C2F(inputVar)}")
+def main():
+    if __name__ == "__main__":
+        global inputVar
+        inputVar = float(input("Celsius? "))
+        print(f"Fahrenheit {C2F(inputVar)}")
 
-# main()
+main()

@@ -9,9 +9,9 @@ def F2C(Fahrenheit):
     return Kelvin
 
 def main():
-    global inputVar
-    inputVar = float(input("Fahrenheit? "))
     if __name__ == "__main__":
+        global inputVar
+        inputVar = float(input("Fahrenheit? "))
         print(f"Kelvin = {F2C(inputVar):^.1f}")
 
 main()
