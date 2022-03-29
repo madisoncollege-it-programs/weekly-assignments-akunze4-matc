@@ -12,7 +12,6 @@ myProcList = myProcString.split('\n')
 
 
 whatVar = myProcList[1::]
-count = 0
 for i in whatVar:
     print(i)
 
