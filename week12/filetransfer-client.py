@@ -3,7 +3,7 @@
 '''
 Name: Alex Kunze
 Purpose: Acting as a client side for the file transfer
-NOTE: I used to base for the client from the LAB
+NOTE: I used to base for the client from the slides
 '''
 
 import socket

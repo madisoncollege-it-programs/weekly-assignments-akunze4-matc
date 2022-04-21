@@ -2,8 +2,8 @@
 
 '''
 Name: Alex Kunze
-Purpose: Acting as a client side for the file transfer
-NOTE: I used to base for the client from the LAB
+Purpose: Acting as a server side for the file transfer
+NOTE: I used to base for the server from the slides
 '''
 
 import socket
