@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#Name: Alex Kunze, Purpose: Web scraping with beautiful soup
 import requests,bs4
 
 res = requests.get('https://notpurple.com')
