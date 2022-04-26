@@ -6,9 +6,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description="This is Alex Kunzes' script")
 
-parser.add_argument('-m', dest='Basic',type=str, help="Enter some text")
 parser.add_argument('-ip', '--ip-address', dest='Ip', type=str,metavar="[a string]", help="Enter a simple string")
-parser.add_argument('-v', '--version',action='version',version='1.0', help="shows program's version number and exit")
 
 input_results = parser.parse_args()
 
